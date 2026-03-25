@@ -1,0 +1,10 @@
+https://nodejs.org/docs/latest/api/readline.htmls
+https://www.mongodb.com/try/download/shell
+
+logging
+OOP
+prom-client
+
+Config : falta
+ProcessManager : falta
+App->Router (usar Router de express)->Controller
