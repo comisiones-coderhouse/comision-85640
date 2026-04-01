@@ -8,3 +8,10 @@ prom-client
 Config : falta
 ProcessManager : falta
 App->Router (usar Router de express)->Controller
+
+
+Docker : Es una plataforma que me permite , entre otras cosas, "dockerizar" una app, eso significca meterla dentro de un contenedor. 
+
+Contenedor : Es una especie de máquina virtual pero mucho más ligera, que me permite ejecutar mi aplicación en cualquier entorno sin preocuparme por las dependencias o configuraciones específicas del sistema operativo.
+
+Imagen : Es una plantilla que se utiliza para crear contenedores. Contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las dependencias y la configuración. 
