@@ -6,7 +6,9 @@
   "scripts": {
     "dev-old": "SET nombre=valor && node --watch index.js",
     "dev-argv": "node --env-file .env --watch index.js --port=5000 --otro=test",
-    "dev": "node --env-file .env --watch index.js"
+    "dev-express": "node --watch index.js",
+    "dev": "node --env-file .env --watch index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --passWithNoTests"
   },
   "keywords": [],
   "author": "",
@@ -14,12 +16,17 @@
   "type": "module",
   "dependencies": {
     "@faker-js/faker": "^9.9.0",
+    "@jest/globals": "^30.3.0",
     "compression": "^1.8.1",
     "express": "^5.2.1",
+    "jest": "^30.3.0",
+    "mongoose": "^9.4.1",
     "pino": "^10.3.1",
     "pino-http": "^11.0.0",
     "pino-mongodb": "^5.0.0",
     "pino-pretty": "^13.1.3",
-    "pretty-bytes": "^7.1.0"
+    "pretty-bytes": "^7.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }

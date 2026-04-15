@@ -1,9 +1,26 @@
-FROM alpine
+FROM node:alpine
 
-RUN apk update && apk add nodejs
+#cd app
+WORKDIR /app
 
-COPY ./http-nativo.js ./
+#copiar package.json
+COPY ./package.json ./
 
-CMD ["node", "http-nativo.js"]
+#instalar dependencias
+RUN npm install
 
-EXPOSE 3000
+#copiar index.js
+COPY ./index.js ./index.js
+COPY ./App.js ./App.js
+COPY ./Config.js ./Config.js
+COPY ./ProcessManager.js ./ProcessManager.js
+COPY ./.env ./.env
+COPY ./controllers ./controllers
+COPY ./middlewares ./middlewares
+COPY ./routes ./routes
+
+
+#mandarlo a ejecutar
+CMD ["npm", "run", "dev"]
+
+EXPOSE 4000

@@ -1,0 +1,18 @@
+FROM node:alpine
+
+#RUN apk update && apk add nodejs
+
+#copiar package.json
+COPY ./package.json ./
+
+#instalar dependencias
+RUN npm install
+
+#copiar index.js
+COPY ./index-express.js ./index.js
+
+
+#mandarlo a ejecutar
+CMD ["npm", "run", "dev-express"]
+
+EXPOSE 3000

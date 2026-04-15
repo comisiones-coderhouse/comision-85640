@@ -1,5 +1,7 @@
 https://nodejs.org/docs/latest/api/readline.htmls
 https://www.mongodb.com/try/download/shell
+https://www.composerize.com/
+https://swagger-doc-builder--horaciogutierr2.replit.app/
 
 logging
 OOP

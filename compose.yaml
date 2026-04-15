@@ -1,0 +1,9 @@
+name: mi-app
+services:
+  mi-app:
+    ports:
+      - 4000:4000
+    container_name: mi-app-container
+    image: mi-app
+  mongo:
+    image: mongo
